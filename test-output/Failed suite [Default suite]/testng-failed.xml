@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.codelovers.timeset.frontend.HomePage">
+        <methods>
+          <include name="TC3_checkTitleBudgetRanking"/>
+          <include name="TC4_checkTitleBudgetSale"/>
+          <include name="setUp"/>
+          <include name="logIn"/>
+          <include name="tearDown"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- com.codelovers.timeset.frontend.HomePage -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->
