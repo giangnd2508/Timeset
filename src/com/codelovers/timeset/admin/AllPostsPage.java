@@ -10,10 +10,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.codelovers.timeset.object.Links;
+import com.codelovers.timeset.object.ObjectRepository;
 
 public class AllPostsPage {
 	private static WebDriver driver;
-
+	ObjectRepository element = new ObjectRepository();
+	
+	
 	@BeforeClass
 	public static void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "D:/Webdriver/chromedriver.exe");
@@ -22,8 +25,7 @@ public class AllPostsPage {
 	
 	@BeforeMethod
 	public static void logIn() throws Exception {
-		driver.get("https://daily.good-job.online/login");
-		driver.findElement(By.id("UserUsername")).sendKeys("admin");
+		driver.get(Links.LOGIN);
 		driver.findElement(By.id("UserPassword")).sendKeys("admin");
 		driver.findElement(By.xpath("*//button")).click();
 	}
@@ -42,10 +44,7 @@ public class AllPostsPage {
 	@Test
 	public void TC1_checkTitle() throws Exception {
 		driver.get(Links.ALL_POSTS);
-		String actualTitle = driver.getTitle();
-		int iTitleLength = driver.getTitle().length();
-		System.out.println(actualTitle);
-		System.out.println(iTitleLength);
+		
 	}
 	
 
