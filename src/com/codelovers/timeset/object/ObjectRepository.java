@@ -1,10 +1,12 @@
 package com.codelovers.timeset.object;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 
 public class ObjectRepository {
 	
-	
+	public List<WebElement> HomePage(){
+		return null;
+	}
 }
