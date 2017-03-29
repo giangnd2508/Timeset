@@ -3,22 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.codelovers.timeset.frontend.LogInPage">
+      <class name="com.codelovers.timeset.frontend.LoginPage">
         <methods>
           <include name="setUp"/>
-          <include name="TC1_LogInWithBlankField"/>
-        </methods>
-      </class> <!-- com.codelovers.timeset.frontend.LogInPage -->
-      <class name="com.codelovers.timeset.frontend.HomePage">
-        <methods>
-          <include name="TC3_checkTitleBudgetRanking"/>
-          <include name="TC4_checkTitleBudgetSale"/>
-          <include name="setUp"/>
-          <include name="logIn"/>
           <include name="tearDown"/>
-          <include name="logOut"/>
+          <include name="TC04_CheckTextPlacehodlerUsername"/>
         </methods>
-      </class> <!-- com.codelovers.timeset.frontend.HomePage -->
+      </class> <!-- com.codelovers.timeset.frontend.LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
