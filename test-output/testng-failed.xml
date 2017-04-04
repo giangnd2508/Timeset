@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
-    <groups>
-      <run>
-        <include name="UI"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.codelovers.timeset.frontend.LoginPage">
+      <class name="com.codelovers.timeset.admin.A2AddPostPage">
         <methods>
-          <include name="TC01_CheckPageTitle"/>
-          <include name="TC03_CheckTextForm"/>
-          <include name="TC08_CheckTextForgotPW"/>
-          <include name="TC06_CheckTextSubmitButton"/>
-          <include name="TC02_CheckTextCompany"/>
-          <include name="TC05_CheckTextPlacehodlerPW"/>
-          <include name="TC04_CheckTextPlacehodlerUsername"/>
-          <include name="TC07_CheckTextRememberLogin"/>
+          <include name="A2_TC02"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.codelovers.timeset.frontend.LoginPage -->
+      </class> <!-- com.codelovers.timeset.admin.A2AddPostPage -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Regression suite] -->
+</suite> <!-- Failed suite [Default suite] -->

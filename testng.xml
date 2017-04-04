@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression suite">
-	<test name="Default test" verbose="2">
 
+<suite name="Regression suite">
+	
+	<test name="chrome test">
 		<classes>
-			<class name="com.codelovers.timeset.frontend.LoginPage">
+			<class name="com.codelovers.timeset.admin.A2AddPostPage">
 			</class>
 		</classes>
-	</test> <!-- Default test -->
-</suite> <!-- Default suite -->
+	</test>
+	
+</suite>

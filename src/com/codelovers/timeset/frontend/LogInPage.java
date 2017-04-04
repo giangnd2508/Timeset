@@ -31,56 +31,56 @@ public class LoginPage {
 	}
 
 	// Test kiểm tra Text
-	@Test(groups = "UI")
+	@Test
 	public void TC01_CheckPageTitle() throws Exception {
 		String PageTitle = lf.getPageTitle();
 		Assert.assertEquals(PageTitle, LoginFactory.PAGE_TITLE);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC02_CheckTextCompany() throws Exception {
 		String CompanyName = lf.getCompanyName();
 		Assert.assertEquals(CompanyName, LoginFactory.COMPANY_NAME);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC03_CheckTextForm() throws Exception {
 		String FormName = lf.getFormName();
 		Assert.assertEquals(FormName, LoginFactory.FORM_NAME);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC04_CheckTextPlacehodlerUsername() throws Exception {
 		String PlacehodlerUsername = lf.getPlaceholderUsername();
 		Assert.assertEquals(PlacehodlerUsername, LoginFactory.PLACEHOLDER_USERNAME);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC05_CheckTextPlacehodlerPW() throws Exception {
 		String PlacehodlerPW = lf.getPlaceholderPW();
 		Assert.assertEquals(PlacehodlerPW, LoginFactory.PLACEHOLDER_PASSWORD);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC06_CheckTextSubmitButton() throws Exception {
 		String SubmitButton = lf.getSubmitButton();
 		Assert.assertEquals(SubmitButton, LoginFactory.SUBMIT_BUTTON);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC07_CheckTextRememberLogin() throws Exception {
 		String RememberLogin = lf.getRememberLogin();
 		Assert.assertEquals(RememberLogin, LoginFactory.REMEMBER_LOGIN);
 	}
 
-	@Test(groups = "UI")
+	@Test
 	public void TC08_CheckTextForgotPW() throws Exception {
 		String ForgotPW = lf.getForgotPW();
 		Assert.assertEquals(ForgotPW, LoginFactory.FORGOT_PASSWORD);
 	}
 
 	// Kiem tra chuc nang Login
-	@Test (groups = "feature")
+	@Test
 	public void TC09_RightUsernameWrongPassword() throws Exception{
 		lf.sendKeysUsername("admin");
 		lf.sendKeysPassword("admin");

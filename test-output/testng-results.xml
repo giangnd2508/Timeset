@@ -1,311 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="8" ignored="1" total="9" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression suite" duration-ms="94" started-at="2017-03-28T09:26:38Z" finished-at="2017-03-28T09:26:38Z">
+  <suite name="Default suite" duration-ms="20832" started-at="2017-04-04T09:07:29Z" finished-at="2017-04-04T09:07:49Z">
     <groups>
-      <group name="UI">
-        <method signature="LoginPage.TC01_CheckPageTitle()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC01_CheckPageTitle" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC02_CheckTextCompany()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC02_CheckTextCompany" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC03_CheckTextForm()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC03_CheckTextForm" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC04_CheckTextPlacehodlerUsername()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC04_CheckTextPlacehodlerUsername" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC05_CheckTextPlacehodlerPW()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC05_CheckTextPlacehodlerPW" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC06_CheckTextSubmitButton()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC06_CheckTextSubmitButton" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC07_CheckTextRememberLogin()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC07_CheckTextRememberLogin" class="com.codelovers.timeset.frontend.LoginPage"/>
-        <method signature="LoginPage.TC08_CheckTextForgotPW()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC08_CheckTextForgotPW" class="com.codelovers.timeset.frontend.LoginPage"/>
-      </group> <!-- UI -->
     </groups>
-    <test name="Default test" duration-ms="94" started-at="2017-03-28T09:26:38Z" finished-at="2017-03-28T09:26:38Z">
-      <class name="com.codelovers.timeset.frontend.LoginPage">
-        <test-method status="FAIL" signature="TC01_CheckPageTitle()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC01_CheckPageTitle" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC01_CheckPageTitle(LoginPage.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="20832" started-at="2017-04-04T09:07:29Z" finished-at="2017-04-04T09:07:49Z">
+      <class name="com.codelovers.timeset.admin.A2AddPostPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="setUp" is-config="true" duration-ms="8615" started-at="2017-04-04T16:07:29Z" finished-at="2017-04-04T16:07:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_CheckPageTitle -->
-        <test-method status="FAIL" signature="TC02_CheckTextCompany()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC02_CheckTextCompany" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC02_CheckTextCompany(LoginPage.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="A2_TC01()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="A2_TC01" duration-ms="131" started-at="2017-04-04T16:07:37Z" description="Post bài mà bỏ trống tất cả các trườn" finished-at="2017-04-04T16:07:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02_CheckTextCompany -->
-        <test-method status="FAIL" signature="TC03_CheckTextForm()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC03_CheckTextForm" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC03_CheckTextForm(LoginPage.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- A2_TC01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="tearDown" is-config="true" duration-ms="134" started-at="2017-04-04T16:07:37Z" finished-at="2017-04-04T16:07:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC03_CheckTextForm -->
-        <test-method status="FAIL" signature="TC04_CheckTextPlacehodlerUsername()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC04_CheckTextPlacehodlerUsername" duration-ms="16" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC04_CheckTextPlacehodlerUsername(LoginPage.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="setUp" is-config="true" duration-ms="8312" started-at="2017-04-04T16:07:38Z" finished-at="2017-04-04T16:07:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC04_CheckTextPlacehodlerUsername -->
-        <test-method status="FAIL" signature="TC06_CheckTextSubmitButton()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC06_CheckTextSubmitButton" duration-ms="15" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC06_CheckTextSubmitButton(LoginPage.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="A2_TC02()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="A2_TC02" duration-ms="1292" started-at="2017-04-04T16:07:46Z" description="Post bài mà bỏ trống trường tiêu đề" finished-at="2017-04-04T16:07:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC06_CheckTextSubmitButton -->
-        <test-method status="FAIL" signature="TC05_CheckTextPlacehodlerPW()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC05_CheckTextPlacehodlerPW" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC05_CheckTextPlacehodlerPW(LoginPage.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- A2_TC02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.codelovers.timeset.admin.A2AddPostPage@59f99ea]" name="tearDown" is-config="true" duration-ms="2320" started-at="2017-04-04T16:07:47Z" finished-at="2017-04-04T16:07:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC05_CheckTextPlacehodlerPW -->
-        <test-method status="FAIL" signature="TC08_CheckTextForgotPW()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC08_CheckTextForgotPW" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC08_CheckTextForgotPW(LoginPage.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC08_CheckTextForgotPW -->
-        <test-method status="FAIL" signature="TC07_CheckTextRememberLogin()[pri:0, instance:com.codelovers.timeset.frontend.LoginPage@27efef64]" name="TC07_CheckTextRememberLogin" duration-ms="0" started-at="2017-03-28T16:26:38Z" finished-at="2017-03-28T16:26:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.codelovers.timeset.frontend.LoginPage.TC07_CheckTextRememberLogin(LoginPage.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC07_CheckTextRememberLogin -->
-      </class> <!-- com.codelovers.timeset.frontend.LoginPage -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.codelovers.timeset.admin.A2AddPostPage -->
     </test> <!-- Default test -->
-  </suite> <!-- Regression suite -->
+  </suite> <!-- Default suite -->
 </testng-results>
