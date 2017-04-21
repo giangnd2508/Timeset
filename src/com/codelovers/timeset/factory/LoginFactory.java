@@ -10,9 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginFactory {
 	WebDriver driver;
 
-	@FindBy(xpath = "//b")
-	WebElement companyName;
-
 	@FindBy(xpath = "//p")
 	WebElement formName;
 
@@ -22,23 +19,30 @@ public class LoginFactory {
 	@FindBy(id = "UserPassword")
 	WebElement password;
 
-	@FindBy(xpath = "//button")
-	WebElement submitButton;
-
-	@FindBy(xpath = "//form[@id='UserAdminLoginForm']/a")
-	WebElement forgotPassword;
-
 	@FindBy(xpath = "//form[@id='UserAdminLoginForm']//label")
 	WebElement rememberLogin;
+
+	@FindBy(xpath = "//form[@id='UserAdminLoginForm']//button")
+	WebElement submitButton;
+
+	@FindBy(xpath = "//*[@id='UserAdminLoginForm']//a[@href='/forgot_password']")
+	WebElement forgotPassword;
+
+	@FindBy(xpath = "//*[@id='UserAdminLoginForm']//a[@href='/terms.html']")
+	WebElement terms;
+
+//	@FindBy(xpath = "//*[@id='UserAdminLoginForm']//a[@href='/privacy.html']")
+//	WebElement privacy;
 
 	public static final String PAGE_TITLE = "Login";
 	public static final String PLACEHOLDER_USERNAME = "ユーザー名";
 	public static final String PLACEHOLDER_PASSWORD = "パスワード";
 	public static final String REMEMBER_LOGIN = "ユーザー名とパスワードを保存";
-	public static final String COMPANY_NAME = "Caregiver Japan";
 	public static final String FORM_NAME = "サインインしてください";
-	public static final String SUBMIT_BUTTON = "サインイン";
-	public static final String FORGOT_PASSWORD = "パスワード確認";
+	public static final String SUBMIT_BUTTON = "利用規約に同意してサインイン";
+	public static final String FORGOT_PASSWORD = "パスワードを忘れました";
+	public static final String TERMS = "利用規約";
+	public static final String PRIVACY = "プライバシーポリシー";
 
 	public LoginFactory(WebDriver driver) {
 		this.driver = driver;
@@ -75,11 +79,6 @@ public class LoginFactory {
 		return actualPageTitle;
 	}
 
-	public String getCompanyName() {
-		String actualCompanyName = companyName.getText();
-		return actualCompanyName;
-	}
-
 	public String getFormName() {
 		String actualFormName = formName.getText();
 		return actualFormName;
@@ -95,14 +94,14 @@ public class LoginFactory {
 		return actualPlaceholderPW;
 	}
 
-	public String getSubmitButton() {
-		String SubmitButton = submitButton.getText();
-		return SubmitButton;
-	}
-
 	public String getRememberLogin() {
 		String RememberLogin = rememberLogin.getText();
 		return RememberLogin;
+	}
+
+	public String getSubmitButton() {
+		String SubmitButton = submitButton.getText();
+		return SubmitButton;
 	}
 
 	public String getForgotPW() {
@@ -110,9 +109,26 @@ public class LoginFactory {
 		return ForgotPW;
 	}
 
+	public String getTerms() {
+		String Terms = terms.getText();
+		return Terms;
+	}
+
+//	public String getPrivacy() {
+//		String Privacy = privacy.getText();
+//		return Privacy;
+//	}
+
 	public void loginSuccessfully() {
-		username.sendKeys("admin");
-		password.sendKeys("admin");
+		username.sendKeys("giang123");
+		password.sendKeys("12345678");
+		submitButton.click();
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	}
+
+	public void login(String userName, String passWord) {
+		username.sendKeys(userName);
+		password.sendKeys(passWord);
 		submitButton.click();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}

@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,7 +21,6 @@ public class LoginPage {
 	public void setUp() throws Exception {
 		driver = new ChromeDriver();
 		lf = new LoginFactory(driver);
-		driver.manage().window().maximize();
 		driver.get(Links.LOGIN);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}
@@ -30,60 +30,40 @@ public class LoginPage {
 		driver.close();
 	}
 
-	// Test kiểm tra Text
-	@Test
-	public void TC01_CheckPageTitle() throws Exception {
+	@AfterClass
+	public void quitBrowser() throws Exception {
+		driver.quit();
+	}
+
+	@Test(description = "Check Text")
+	public void LG_UI_01() throws Exception {
 		String PageTitle = lf.getPageTitle();
 		Assert.assertEquals(PageTitle, LoginFactory.PAGE_TITLE);
-	}
 
-	@Test
-	public void TC02_CheckTextCompany() throws Exception {
-		String CompanyName = lf.getCompanyName();
-		Assert.assertEquals(CompanyName, LoginFactory.COMPANY_NAME);
-	}
-
-	@Test
-	public void TC03_CheckTextForm() throws Exception {
 		String FormName = lf.getFormName();
 		Assert.assertEquals(FormName, LoginFactory.FORM_NAME);
-	}
 
-	@Test
-	public void TC04_CheckTextPlacehodlerUsername() throws Exception {
 		String PlacehodlerUsername = lf.getPlaceholderUsername();
 		Assert.assertEquals(PlacehodlerUsername, LoginFactory.PLACEHOLDER_USERNAME);
-	}
 
-	@Test
-	public void TC05_CheckTextPlacehodlerPW() throws Exception {
 		String PlacehodlerPW = lf.getPlaceholderPW();
 		Assert.assertEquals(PlacehodlerPW, LoginFactory.PLACEHOLDER_PASSWORD);
-	}
 
-	@Test
-	public void TC06_CheckTextSubmitButton() throws Exception {
 		String SubmitButton = lf.getSubmitButton();
 		Assert.assertEquals(SubmitButton, LoginFactory.SUBMIT_BUTTON);
-	}
 
-	@Test
-	public void TC07_CheckTextRememberLogin() throws Exception {
 		String RememberLogin = lf.getRememberLogin();
 		Assert.assertEquals(RememberLogin, LoginFactory.REMEMBER_LOGIN);
-	}
 
-	@Test
-	public void TC08_CheckTextForgotPW() throws Exception {
 		String ForgotPW = lf.getForgotPW();
 		Assert.assertEquals(ForgotPW, LoginFactory.FORGOT_PASSWORD);
+
+		String Terms = lf.getTerms();
+		Assert.assertEquals(Terms, LoginFactory.TERMS);
+		
+//		String Privacy = lf.getTerms();
+//		Assert.assertEquals(Privacy, LoginFactory.TERMS);
+
 	}
 
-	// Kiem tra chuc nang Login
-	@Test
-	public void TC09_RightUsernameWrongPassword() throws Exception{
-		lf.sendKeysUsername("admin");
-		lf.sendKeysPassword("admin");
-		lf.clickSubmit();
-	}
 }

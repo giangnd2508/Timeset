@@ -3,6 +3,7 @@ package com.codelovers.timeset.admin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,8 +31,12 @@ public class A2AddPostPage {
 	public void tearDown() throws Exception {
 		driver.close();
 	}
+	@AfterClass
+	public void quitBrowser() throws Exception{
+		driver.quit();
+	}
 
-	@Test(description = "Post bài mà bỏ trống tất cả các trườn")
+	@Test(description = "Post bài mà bỏ trống tất cả các trường")
 	public void A2_TC01() throws Exception {
 		a2.clickPublishButton();
 		Assert.assertEquals(a2.getPageTitle(), A2AddPostFactory.PAGE_TITLE);
@@ -52,4 +57,5 @@ public class A2AddPostPage {
 		a2.clickPublishButton();
 		Assert.assertEquals(a2.getPageTitle(), A2AddPostFactory.PAGE_TITLE);
 	}
+	
 }

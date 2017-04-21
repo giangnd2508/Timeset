@@ -43,7 +43,7 @@ public class A2AddPostFactory {
 	WebElement categoryTitle;
 
 	@FindBy(xpath = ".//*[@id='add-category']//input[@type='checkbox']")
-	WebElement Category1;
+	WebElement category1;
 
 	@FindBy(id = "show-hidden-form")
 	WebElement showAndHideCategoryButton;
@@ -52,7 +52,7 @@ public class A2AddPostFactory {
 	WebElement newCategoryInput;
 
 	@FindBy(id = "newcategory_parent")
-	WebElement CategoryDropdown;
+	WebElement categoryDropdown;
 
 	@FindBy(id = "add-category-ajax")
 	WebElement addNewCategoryButton;
@@ -113,7 +113,7 @@ public class A2AddPostFactory {
 	}
 
 	public void clickSelectCategory() {
-		Category1.click();
+		category1.click();
 	}
 
 	public void clickShowAndHideCategory() {
@@ -137,12 +137,12 @@ public class A2AddPostFactory {
 	}
 
 	public void selectCategory(int index) {
-		Select CategorySelect = new Select(CategoryDropdown);
+		Select CategorySelect = new Select(categoryDropdown);
 		CategorySelect.selectByIndex(index);
 	}
 
 	public void selectCategory(String categoryName) {
-		Select CategorySelect = new Select(CategoryDropdown);
+		Select CategorySelect = new Select(categoryDropdown);
 		CategorySelect.selectByValue(categoryName);
 	}
 

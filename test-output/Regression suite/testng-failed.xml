@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression suite]">
-  <test name="Default test(failed)">
-    <groups>
-      <run>
-        <include name="UI"/>
-      </run>
-    </groups>
+  <test name="chrome test(failed)">
     <classes>
       <class name="com.codelovers.timeset.frontend.LoginPage">
         <methods>
-          <include name="TC01_CheckPageTitle"/>
-          <include name="TC03_CheckTextForm"/>
-          <include name="TC08_CheckTextForgotPW"/>
-          <include name="TC06_CheckTextSubmitButton"/>
-          <include name="TC02_CheckTextCompany"/>
-          <include name="TC05_CheckTextPlacehodlerPW"/>
-          <include name="TC04_CheckTextPlacehodlerUsername"/>
-          <include name="TC07_CheckTextRememberLogin"/>
+          <include name="LG_TC09"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LG_TC07"/>
+          <include name="LG_TC05"/>
+          <include name="LG_TC08"/>
+          <include name="LG_TC03"/>
+          <include name="LG_TC06"/>
+          <include name="LG_TC01"/>
+          <include name="LG_TC04"/>
+          <include name="LG_TC02"/>
+          <include name="quitBrowser"/>
         </methods>
       </class> <!-- com.codelovers.timeset.frontend.LoginPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- chrome test(failed) -->
 </suite> <!-- Failed suite [Regression suite] -->
