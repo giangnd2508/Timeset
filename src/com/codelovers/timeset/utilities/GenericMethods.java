@@ -165,4 +165,8 @@ public class GenericMethods {
 		}
 	}
 
+	public void waitSeconds(int seconds) {
+		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+	}
+
 }

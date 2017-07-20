@@ -33,7 +33,7 @@ public class A2AddPostFactory {
 	@FindBy(xpath = "//form[@id='post-validate']//h3[text()='公開']")
 	WebElement releaseTitle;
 
-	@FindBy(xpath = ".//form[@id='post-validate']//input[@value='下書きとして保存']")
+	@FindBy(xpath = ".//*[@id='post-validate']/div[3]/div[1]/div[2]/input[1]")
 	WebElement saveDraftButton;
 
 	@FindBy(xpath = ".//form[@id='post-validate']//input[@value='公開']")

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginFactory {
 	WebDriver driver;
@@ -131,5 +132,10 @@ public class LoginFactory {
 		password.sendKeys(passWord);
 		submitButton.click();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	}
+	
+	public void assertPageTitle() {
+		String PageTitle = driver.getTitle();
+		Assert.assertEquals(PageTitle, LoginFactory.PAGE_TITLE);
 	}
 }

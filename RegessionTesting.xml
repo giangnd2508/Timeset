@@ -1,0 +1,7 @@
+<suite name="Regeression TestSuite">
+	<test name="Application Test">
+		<classes>
+			<class name="testclasses.LogInPage"></class>
+		</classes>
+	</test>
+</suite>

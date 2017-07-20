@@ -1,6 +1,5 @@
 package com.codelovers.timeset.factory;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,11 +18,23 @@ public class A1ArticleListFactory {
 	@FindBy(id = "doaction")
 	WebElement actionButton;
 
+	@FindBy(xpath = ".//*[@id='filter-subsubsub']")
+	WebElement allPostButton;
+
+	@FindBy(xpath = ".//*[@id='filter-by-date']")
+	WebElement date;
+
+	@FindBy(id = "cat")
+	WebElement category;
+
 	@FindBy(xpath = "//input[@name='search_param']")
 	WebElement searchBar;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement searchButton;
+
+	@FindBy(id = "post-query-submit")
+	WebElement queryPost;
 
 	@FindBy(xpath = "//a[contains(text(),'タイトル')]")
 	WebElement titleSort;
@@ -43,25 +54,14 @@ public class A1ArticleListFactory {
 	@FindBy(xpath = "//input[@id='50']")
 	WebElement selectItem1;
 
-	@FindBy(xpath = "//*[@id='table-list']/div[3]/div/table/tbody/tr[1]/td[2]/div/div[2]/h4/p/a")
+	@FindBy(xpath = ".//*[@id='table-list']//tbody/tr[1]//td[6]/a[1]")
 	WebElement editItem1;
 
-	@FindBy(xpath = "//*[@id='table-list']/div[3]/div/table/tbody/tr[1]/td[2]/div/div[2]/div/a[3]")
+	@FindBy(xpath = ".//*[@id='table-list']//tbody/tr[1]//td[6]/a[2]")
 	WebElement previewItem1;
 
-	public void selectBulk() {
-		Select action = new Select(dropdownAction);
-		action.selectByValue(BULK);
-	}
-
-	public void selectDelete() {
-		Select action = new Select(dropdownAction);
-		action.selectByValue(DELETE);
-	}
-
-	Select filtersub = new Select(driver.findElement(By.id("filter-subsubsub")));
-	Select filterdate = new Select(driver.findElement(By.id("filter-by-date")));
-	Select filtercat = new Select(driver.findElement(By.id("cat")));
+	@FindBy(xpath = ".//*[@id='table-list']//tbody/tr[1]//td[6]/a[3]")
+	WebElement deleteItem1;
 
 	public static final String ARTICLE_LIST = "記事一覧";
 	public static final String NEW_ARTICLE = "新規追加";
@@ -82,6 +82,16 @@ public class A1ArticleListFactory {
 		PageFactory.initElements(driver, this);
 	}
 
+	public void selectBulk() {
+		Select action = new Select(dropdownAction);
+		action.selectByValue(BULK);
+	}
+
+	public void selectDelete() {
+		Select action = new Select(dropdownAction);
+		action.selectByValue(DELETE);
+	}
+
 	// ArticleList Function
 
 	public void clickAddArticleButton() {
@@ -90,6 +100,25 @@ public class A1ArticleListFactory {
 
 	public void clickActionButton() {
 		actionButton.click();
+	}
+
+	public void selectAllPost() {
+		Select select = new Select(allPostButton);
+		select.selectByIndex(0);
+	}
+
+	public void selectPublishedPost() {
+		Select select = new Select(allPostButton);
+		select.selectByIndex(1);
+	}
+
+	public void selectDraftPost() {
+		Select select = new Select(allPostButton);
+		select.selectByIndex(2);
+	}
+
+	public void clickQueryPost() {
+		queryPost.click();
 	}
 
 	public void clickAuthorSort() {
@@ -132,5 +161,7 @@ public class A1ArticleListFactory {
 		searchBar.clear();
 		searchBar.sendKeys(value);
 	}
+
+	
 
 }
